@@ -217,6 +217,40 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "POST search <point intersection>",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"collections\":[\"test-collection\"],\n    \"intersects\":{\"type\": \"Point\", \"coordinates\": [150.04, -33.14]}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
