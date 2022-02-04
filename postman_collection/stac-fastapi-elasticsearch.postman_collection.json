@@ -256,15 +256,28 @@
 			"name": "GET search <query gsd>",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
 				"url": {
-					"raw": "localhost:8083/seaarch",
+					"raw": "http://localhost:8083/search?query={\"gsd\": {\"gt\": 14}}",
+					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8083",
 					"path": [
-						"seaarch"
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "{\"gsd\": {\"gt\": 14}}"
+						}
 					]
 				}
 			},
