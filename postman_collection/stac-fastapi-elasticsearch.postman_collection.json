@@ -251,6 +251,24 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GET search <query gsd>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/seaarch",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"seaarch"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
